@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/horoscope-modal.ejs') %>
+        <%- include('./partials/header.ejs') %>
+        
+        <div class="container">            
+            <button class="btn btn-link back-btn">←Go Back</button>
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-white my-3"><span class="text-light">►</span> <%= sun.title %></h1>
+                    <img src="<%=sunImg%>" alt="<%=sun.title%>" class="w-25" style="float: left;margin-right: 1rem;">
+                    <% 
+                        const sunDescription = sun.description.split('|'); 
+                        for(let d of sunDescription) {
+                    %>
+                        <p class="lead"><%= d %></p>
+                    <% } %>
+                    <br>
+                    <% 
+                        const sunAbout = sun.about.split('|'); 
+                        for(let a of sunAbout) {
+                    %>
+                        <p class="lead"><%= a %></p>
+                    <% } %>
+                    <a href="<%=sun.link%>" target="_blank" class="btn btn-outline-secondary">Read more...</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-white my-3"><span class="text-light">►</span> <%= moon.title %></h1>
+                    <img src="<%=moonImg%>" alt="<%=moon.title%>" class="w-25" style="float: left;margin-right: 1rem">
+                    <% 
+                        const moonDescription = moon.description.split('|'); 
+                        for(let d of moonDescription) {
+                    %>
+                        <p class="lead"><%= d %></p>
+                    <% } %>
+                    <br>
+                    <% 
+                        const moonAbout = moon.about.split('|'); 
+                        for(let a of moonAbout) {
+                    %>
+                        <p class="lead"><%= a %></p>
+                    <% } %>
+                    <a href="<%=moon.link%>" target="_blank" class="btn btn-outline-secondary">Read more...</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-white my-3"><span class="text-light">►</span> <%= rising.title %></h1>
+                    <img src="<%=risingImg%>" alt="<%=rising.title%>" class="w-25" style="float: left;margin-right: 1rem">
+                    <% 
+                        const risingDescription = rising.description.split('|'); 
+                        for(let d of risingDescription) {
+                    %>
+                        <p class="lead"><%= d %></p>
+                    <% } %>
+                    <br>
+                    <% 
+                        const risingAbout = rising.about.split('|'); 
+                        for(let a of risingAbout) {
+                    %>
+                        <p class="lead"><%= a %></p>
+                    <% } %>
+                    <a href="<%=rising.link%>" target="_blank" class="btn btn-outline-secondary mb-3">Read more...</a>
+                </div>
+            </div>
+            <button class="btn btn-link back-btn mb-3">←Go Back</button>
+        </div>        
+        <%- include('./partials/footer.ejs') %>
+        <script type="text/javascript" src="/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>        
+        <script type="text/javascript" src="/dt-jquery/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <%- include('./partials/horoscope-modal.ejs') %>
+            <%- include('./partials/header.ejs') %>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center text-white my-3 rounded"><span class="text-light">►</span> Big Three
+                                Picker
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table id="bigThreeTable" class="table display nowarp w-100 my-5">
+                                <thead>
+                                    <tr>
+                                        <th>☉ Sun 
+                                            <select class="form-select mt-2 search-select" autocomplete="off"
+                                                aria-label="Default select example">
+                                                <option selected value="">Select Sign</option>
+                                                <option value="Aries">♈ Aries</option>
+                                                <option value="Taurus">♉ Taurus</option>
+                                                <option value="Gemini">♊ Gemini</option>
+                                                <option value="Cancer">♋ Cancer</option>
+                                                <option value="Leo">♌ Leo</option>
+                                                <option value="Virgo">♍ Virgo</option>
+                                                <option value="Libra">♎ Libra</option>
+                                                <option value="Scorpio">♏ Scorpio</option>
+                                                <option value="Sagittarius">♐ Sagittarius</option>
+                                                <option value="Capricorn">♑ Capricorn</option>
+                                                <option value="Aquarius">♒ Aquarius</option>
+                                                <option value="Pisces">♓ Pisces</option>
+                                            </select></th>
+                                        <th>☽ Moon 
+                                            <select class="form-select mt-2 search-select" autocomplete="off"
+                                                aria-label="Default select example">
+                                                <option selected value="">Select Sign</option>
+                                                <option value="Aries">♈ Aries</option>
+                                                <option value="Taurus">♉ Taurus</option>
+                                                <option value="Gemini">♊ Gemini</option>
+                                                <option value="Cancer">♋ Cancer</option>
+                                                <option value="Leo">♌ Leo</option>
+                                                <option value="Virgo">♍ Virgo</option>
+                                                <option value="Libra">♎ Libra</option>
+                                                <option value="Scorpio">♏ Scorpio</option>
+                                                <option value="Sagittarius">♐ Sagittarius</option>
+                                                <option value="Capricorn">♑ Capricorn</option>
+                                                <option value="Aquarius">♒ Aquarius</option>
+                                                <option value="Pisces">♓ Pisces</option>
+                                            </select></th>
+                                        <th>↟ Rising 
+                                            <select class="form-select mt-2 search-select" autocomplete="off"
+                                                aria-label="Default select example">
+                                                <option selected value="">Select Sign</option>
+                                                <option value="Aries">♈ Aries</option>
+                                                <option value="Taurus">♉ Taurus</option>
+                                                <option value="Gemini">♊ Gemini</option>
+                                                <option value="Cancer">♋ Cancer</option>
+                                                <option value="Leo">♌ Leo</option>
+                                                <option value="Virgo">♍ Virgo</option>
+                                                <option value="Libra">♎ Libra</option>
+                                                <option value="Scorpio">♏ Scorpio</option>
+                                                <option value="Sagittarius">♐ Sagittarius</option>
+                                                <option value="Capricorn">♑ Capricorn</option>
+                                                <option value="Aquarius">♒ Aquarius</option>
+                                                <option value="Pisces">♓ Pisces</option>
+                                            </select></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <%- include('./partials/footer.ejs') %>
+                    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+                    <script type="text/javascript" src="/jquery/jquery.min.js"></script>
+                    <script type="text/javascript" src="/dt-jquery/jquery.dataTables.min.js"></script>
+                    <script type="text/javascript" src="/dt-js/dataTables.bootstrap5.min.js"></script>
+                    <script type="text/javascript"
+                        src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+                    <script type="text/javascript" src="/script.js"></script>
+    </body>
+
+</html>
