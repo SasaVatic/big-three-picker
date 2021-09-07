@@ -1,0 +1,42 @@
+/* Modal window */
+.modal-title {
+    margin: 0 auto;
+}
+
+/* Details page images */
+.sign-img {
+    float: left;
+    margin-right: 1rem;
+}
+
+/* Select elements and buttons */
+select,
+select option:hover {
+    cursor: pointer;
+}
+
+.btn:focus,
+.form-select:focus {
+    box-shadow: none !important;
+}
+
+.paginate_button .page-link {
+    box-shadow: none;
+}
+
+/* Layout elements and Responsiveness */
+header,
+footer {
+    margin: 0 auto;
+}
+
+.container-fluid,
+header,
+footer {
+    max-width: 1920px;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col">
                     <h1 class="text-center text-white my-3"><span class="text-light">►</span> <%= sun.title %></h1>
-                    <img src="<%=sunImg%>" alt="<%=sun.title%>" class="w-25" style="float: left;margin-right: 1rem;">
+                    <img src="<%=sunImg%>" alt="<%=sun.title%>" class="w-25 sign-img">
                     <% 
                         const sunDescription = sun.description.split('|'); 
                         for(let d of sunDescription) {
@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col">
                     <h1 class="text-center text-white my-3"><span class="text-light">►</span> <%= moon.title %></h1>
-                    <img src="<%=moonImg%>" alt="<%=moon.title%>" class="w-25" style="float: left;margin-right: 1rem">
+                    <img src="<%=moonImg%>" alt="<%=moon.title%>" class="w-25 sign-img">
                     <% 
                         const moonDescription = moon.description.split('|'); 
                         for(let d of moonDescription) {
@@ -50,7 +50,7 @@
             <div class="row">
                 <div class="col">
                     <h1 class="text-center text-white my-3"><span class="text-light">►</span> <%= rising.title %></h1>
-                    <img src="<%=risingImg%>" alt="<%=rising.title%>" class="w-25" style="float: left;margin-right: 1rem">
+                    <img src="<%=risingImg%>" alt="<%=rising.title%>" class="w-25 sign-img">
                     <% 
                         const risingDescription = rising.description.split('|'); 
                         for(let d of risingDescription) {
@@ -67,12 +67,9 @@
                     <a href="<%=rising.link%>" target="_blank" class="btn btn-outline-secondary mb-3">Read more...</a>
                 </div>
             </div>
-            <button class="btn btn-link back-btn mb-3">←Go Back</button>
+            <button class="btn btn-link back-btn mb-4">←Go Back</button>
         </div>        
         <%- include('./partials/footer.ejs') %>
-        <script type="text/javascript" src="/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>        
-        <script type="text/javascript" src="/dt-jquery/jquery.dataTables.min.js"></script>
-        <script type="text/javascript" src="/script.js"></script>
+        <%- include('./partials/scripts.ejs') %>
     </body>
 </html>
