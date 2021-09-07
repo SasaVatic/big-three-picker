@@ -8,9 +8,7 @@ const port = 3000;
 app.set('view engine', 'ejs');
 
 // Start server
-app.listen(port, () => {
-    console.log(`App listening on port ${port}`);
-});
+app.listen(process.env.PORT || port);
 
 // Public folder
 app.use(express.static('public'));
